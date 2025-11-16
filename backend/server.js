@@ -17,7 +17,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://frontend-ochre-ten-32.vercel.app",
     credentials: true
 }));
 app.use(express.json());
@@ -42,4 +42,5 @@ app.use(ErrorMiddleware);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+
 });
